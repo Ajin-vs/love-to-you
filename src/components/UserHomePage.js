@@ -1,6 +1,7 @@
 import { useState } from "react";
-
+import img from "../components/songs/watr-double-overhead-11517.mp3"
 function UserHomePage(){
+    
     const [a,setA] = useState(0)
     const [data, setData] =useState('')
     const [show, setShow] =useState(false)
@@ -23,7 +24,8 @@ function UserHomePage(){
             {
                 love?
                
-                 <>   
+                 <>  
+               
                 <p className="text-center m-5 text-danger h1">{data}</p>
                 {
                     show? <div className="row  container "> 
@@ -81,13 +83,17 @@ function UserHomePage(){
                     <div className="col m-3">
                         <div className = "heart"></div>
                     </div>
-                    
+                    <audio controls autoPlay hidden>
+     <source src={img} type="audio/ogg"/>
+     </audio>
                     </div>:''
                 }    
                     </>:''
                 
                
             }
+    
+
         </>
     )
 }
