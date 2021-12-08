@@ -84,8 +84,8 @@ function UserHomePage(){
                         <div className = "heart"></div>
                     </div>
                     <audio controls autoPlay hidden>
-     <source src={img} type="audio/ogg"/>
-     </audio>
+                        <source src={img} type="audio/ogg"/>
+                    </audio>
                     </div>:''
                 }    
                     </>:''
